@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ÖĞRENİYORUM</title>
+    <!-- Class--id-->
+    <style>
+        .divOzellik {
+            width: 100%;
+            height: 100px;
+            background-color: antiquewhite;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .divOzellik2 {
+            width: 100%;
+            height: 100px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- listeleme -->
+    <ul>
+        <li class="item">kahve</li>
+        <li class="item">çay</li>
+    </ul>
+    <ol type="A">
+        <li class="item">kahve</li>
+        <li class="item">çay</li>
+    </ol>
+    <ol type="I">
+        <li class="item">kahve</li>
+        <li class="item">çay</li>
+    </ol>
+
+    <ol type="1">
+        <li> iç donanım
+            <ol type="I">
+                <li> anakart</li>
+                <li>işlemci</li>
+                <li>bellek</li>
+            </ol>
+        </li>
+        <li> dış donanım
+            <ol type="1">
+                <li> monitor
+                    <ol type="a">
+                        <li>LCD</li>
+                        <li>LED</li>
+                    </ol>
+                </li>
+                <li>klavye</li>
+                <li>fare</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- metinlerin yazı boyutu -->
+    <h5>wa</h5>
+    <h1>wa</h1>
+
+    <!-- düz çizgi -->
+    <hr>
+
+    <!-- yazı belirginleştirmek  -->
+    <p> <strong>aaaa</strong> </p>
+
+    <!-- boşluk -->
+    <br>
+
+    <!-- resim eklemek ve ayarları-->
+    <img src="resimler/indir.png" alt="türk bayrağı bulunamadı" width="120" height="100">
+    <p>Türk bayrağı</p>
+
+    <!-- ekranda ortalama-->
+    <center>
+        <p>A</p>
+    </center>
+
+    <!-- Link ekleme
+    <a href="https://www.google.com">tıklayınız</a>-->
+
+
+    <!--görselde link ekleme -->
+    <a href="https://www.google.com" target="_blank">
+        <img src="resimler/indir.png" alt="" width="70" height="50"> </a>
+
+
+    <!-- tablo oluşturma-->
+    <table border="1">
+        <tr>
+            <th colspan="3"> Product </th>
+        </tr>
+        <tr>
+            <th> no</th>
+            <th> P.Name</th>
+            <th> P.Count</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td> Pen</td>
+            <td rowspan="3">50</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Book</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Dust</td>
+        </tr>
+    </table>
+
+    <!-- yanyana yazdırır-->
+    <span> a </span>
+    <span> b</span>
+
+    <br>
+    <br>
+
+    <!---Div Özelliği--->
+    <div class="divOzellik">
+        <h3> Web Sitemize Hoşgeldiniz</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, libero?</p>
+    </div>
+    <div class="divOzellik2">
+    </div>
+    <br>
+    <!-- form yapıları-->
+    <form action="gonder.php">
+        <input type="text" placeholder="kullanıcı adı ">
+        <input type="password" placeholder="şifreniz">
+        <input type="email" placeholder="email adres">
+        <br>
+        <input type="checkbox">kitap okumak <br>
+        <input type="checkbox">spor yapmak<br>
+        <input type="radio" name="CinsiyetRadio">kadın
+        <input type="radio" name="CinsiyetRadio">erkek <br>
+        <input type="file"> <br> <br>
+        içecek seçiniz:
+        <select>
+            <option value="Çay">Çay</option>
+            <option value="Kahve">Kahve</option>
+            <option value="Limonata">Limonata</option>
+        </select> <br>
+        <textarea name="mesajInput" id="mesajAlanı" cols="30" rows="10"> </textarea>
+        <br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Temizle">
+    </form>
+    <!-- Video ekleme-->
+    <video width="100" height="100">
+        <source src="videolar/videonunismi.mp4" type="video/mp4">
+    </video>
+    <!---IFrame kullanımı--->
+    <iframe src="https://www.google.com" width="200" height="400"> </iframe>
+
+</body>
+
+</html>
